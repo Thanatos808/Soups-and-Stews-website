@@ -1,0 +1,238 @@
+/* Root */
+:root {
+    --primary-color: #8f6fa3;
+    --secondary-color: #4a3f50;
+    --accent-color: #b89acb;
+    --light-accent: #f3eaf7;
+    --page-background: #fffaf2;
+    --content-background: white;
+    --light: white;
+    --dark: #222222;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    background-color: var(--page-background);
+    color: var(--dark);
+}
+
+/* Header */
+header {
+    padding: 1.5em;
+    background-color: var(--primary-color);
+    color: var(--light);
+    text-align: center;
+}
+
+header h1 {
+    padding-bottom: .25em;
+}
+
+header p {
+    padding-bottom: 0;
+    font-style: italic;
+}
+
+/* Navigation */
+#navMenu {
+    width: 100%;
+}
+
+#navMenu ul {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background-color: var(--secondary-color);
+}
+
+#navMenu li {
+    flex: 1;
+    padding-bottom: 0;
+}
+
+#navMenu a {
+    display: block;
+    padding: 1em;
+    color: var(--light);
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#navMenu a:hover,
+#navMenu a:focus,
+#navMenu a.current {
+    background-color: var(--accent-color);
+}
+
+/* Main layout */
+main {
+    display: flex;
+    gap: 1.5em;
+    padding: 1.5em;
+    background-color: var(--content-background);
+    align-items: flex-start;
+}
+
+section {
+    flex: 3;
+}
+
+aside {
+    flex: 1;
+    padding: 1em;
+    background-color: var(--light-accent);
+    border: 2px solid var(--accent-color);
+}
+
+/* Resource Links */
+.resourceLinks a {
+    display: block;
+    padding: .5em 0;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.resourceLinks a:hover,
+.resourceLinks a:focus {
+    text-decoration: underline;
+}
+
+/* Text */
+h2, h3, p {
+    padding-bottom: .75em;
+}
+
+h2 {
+    color: var(--primary-color);
+}
+
+h3 {
+    color: var(--secondary-color);
+}
+
+ul, ol {
+    margin-left: 1.5em;
+    padding-bottom: .75em;
+}
+
+li {
+    padding-bottom: .35em;
+}
+
+/* Links */
+a {
+    color: var(--primary-color);
+}
+
+a:hover,
+a:focus {
+    color: var(--accent-color);
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+figure {
+    margin-bottom: 1em;
+}
+
+figure img {
+    display: block;
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/* Footer */
+footer {
+    padding: 1em;
+    background-color: var(--primary-color);
+    color: var(--light);
+    text-align: center;
+}
+
+footer p {
+    padding-bottom: 0;
+}
+
+/* Mobile layout */
+@media only screen and (max-width: 700px) {
+    body {
+        width: 100%;
+        border: none;
+    }
+
+    #navMenu ul {
+        flex-direction: column;
+    }
+
+    #navMenu li {
+        width: 100%;
+    }
+
+    main {
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+/* Tables */
+table {
+    width: 100%;
+    margin-bottom: 1em;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: .75em;
+    border: 1px solid var(--accent-color);
+    text-align: left;
+    vertical-align: top;
+}
+
+th {
+    background-color: var(--primary-color);
+    color: var(--light);
+}
+
+tr:nth-child(even) {
+    background-color: var(--light-accent);
+}
+
+/* Video */
+.videoWrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    margin-bottom: 1em;
+    overflow: hidden;
+}
+
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
