@@ -9,7 +9,7 @@ This website was designed as a final web development project to showcase foundat
 
 ## Features
 - Multi-page website structure
-- Semanting HTML layout
+- Semantic HTML layout
 - Consistent navigation across pages
 - Responsive page styling
 - Images
